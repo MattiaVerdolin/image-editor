@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="pipelineLabel" layoutX="23.0" layoutY="14.0" text="Pipeline">
+        <font>
+            <Font name="Montserrat SemiBold" size="14.0"/>
+        </font>
+    </Label>
+
+    <ListView fx:id="pipeline_ListView" layoutY="44.0" prefHeight="520.0" prefWidth="249.0"
+              AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="44.0"/>
+    <Button fx:id="runButton" layoutX="196.0" layoutY="580.0" mnemonicParsing="false" text="Run"
+            AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="11.0"/>
+    <Button fx:id="cancelButton" layoutX="9.0" layoutY="580.0" mnemonicParsing="false" text="🗑 Cancella"
+            AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="9.0"/>
+</AnchorPane>

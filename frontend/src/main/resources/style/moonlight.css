@@ -1,0 +1,164 @@
+/* SFONDI DELLE SEZIONI (incl. finestre about e preferences) */
+#vbox, #anchorPane,
+#stackPane, #aboutPane,
+#preferencesPane {
+    -fx-background-color: #434343; /* Imposta lo sfondo a #434343 */
+}
+
+/* TITOLI DELLE SEZIONI */
+
+#pipelineLabel,
+#logLabel,
+#avTransformationLabel {
+    -fx-text-fill: white; /* Imposta il colore dei titoli a bianco */
+}
+
+/* PULSANTI RUN E CANCELLA */
+
+/* Stile generale dei pulsanti */
+#runButton, #close, #saveButton {
+    -fx-background-color: #0e5bf5;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.20), 10, 0, 0, 3);
+    -fx-text-fill: WHITE;
+    -fx-font-size: 14px;
+}
+
+/* Cambia colore quando il mouse passa sopra */
+#runButton:hover, #close:hover, #saveButton:hover {
+    -fx-background-color: #1a6df5; /* Colore al passaggio del mouse */
+}
+
+/* Cambia colore per il pulsante "cancella" al passaggio del mouse */
+#cancelButton:hover {
+    -fx-background-color: #f0f0f0; /* Colore al passaggio del mouse */
+}
+
+/* Stile generale del pulsante "cancella" */
+#cancelButton, #languageComboBox {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.20), 10, 0, 0, 3);
+    -fx-font-size: 14px;
+}
+
+/* LOG, TRASFORMAZIONI E PIPELINE LISTVIEW */
+
+#log_listView {
+    -fx-background-color: #393939;
+    -fx-selection-bar: transparent;
+}
+
+/* Stile della ListView per Pipeline */
+#pipeline_ListView {
+    -fx-background-color: #323232;
+    -fx-selection-bar: transparent;
+    /* arrotondamento degli angoli a sinistra*/
+    -fx-background-radius: 15 0 0 15;
+    -fx-border-radius: 15 0 0 15;
+}
+
+/* Stile della ListView per Transformations */
+#transformations_ListView {
+    -fx-background-color: #323232;
+    -fx-selection-bar: transparent;
+    /* arrotondamento degli angoli a destra*/
+    -fx-background-radius: 0 15 15 0;
+    -fx-border-radius: 0 15 15 0;
+}
+
+/* Rendi le celle trasparenti e il testo bianco per le 3 ListView */
+#pipeline_ListView .list-cell,
+#transformations_ListView .list-cell,
+#log_listView .list-cell {
+    -fx-background-color: transparent; /* Sfondo trasparente di default */
+}
+
+#log_listView .list-cell {
+    -fx-text-fill: white;
+}
+
+#pipeline_ListView .list-cell .label,
+#transformations_ListView .list-cell .label {
+    -fx-text-fill: white; /* Colore del testo bianco */
+}
+
+/* REGOLE UTILIZZATE ALL'AGGIUNTA A RUNTIME DELLE TRASFORMAZIONI NELLA PIPELINE E NELLE AV TRANSFORMATION */
+
+/* Applica il divisore solo quando presente la classe with-divider */
+.with-divider {
+    -fx-border-color: transparent transparent #5a5a5a transparent; /* Divisore inferiore */
+    -fx-border-width: 0 0 1 0; /* Larghezza del bordo inferiore */
+    -fx-padding: 7px; /* Spaziatura interna */
+}
+
+/* Stile per i pulsanti "+" della lista delle trasformazioni*/
+.plus-button {
+    -fx-background-color: #0e5bf5;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 5px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.20), 3, 0, 0, 2);
+    -fx-pref-width: 25px;  /* Imposta la larghezza preferita */
+    -fx-pref-height: 25px; /* Imposta l'altezza preferita */
+    -fx-min-width: 25px;   /* Imposta la larghezza minima */
+    -fx-min-height: 25px;  /* Imposta l'altezza minima */
+}
+
+#plus-button:hover {
+    -fx-background-color: #1a6df5; /* Colore al passaggio del mouse */
+}
+
+/* MENU BAR */
+
+/* Stile per la MenuBar */
+.menu-bar {
+    -fx-background-color: #323232; /* Sfondo grigio scuro */
+}
+
+/* Stile per i Menu all'interno della MenuBar */
+.menu {
+    -fx-text-fill: white; /* Testo bianco */
+}
+
+/* Stile per gli elementi del Menu */
+.menu .label {
+    -fx-text-fill: white; /* Testo bianco */
+}
+
+/* Stile per le voci di menu */
+.menu-item {
+    -fx-background-color: #323232;
+    -fx-text-fill: white; /* Testo bianco per le voci del menu */
+}
+
+/* Evidenzia l'elemento quando il mouse passa sopra */
+.menu:hover, .menu-item:hover {
+    -fx-background-color: #0e5bf5; /* Colore di evidenziazione */
+}
+
+/*SCROLL BAR*/
+
+/* Stile generale per la scrollbar */
+.scroll-bar {
+    -fx-background: transparent; /* Sfondo della scrollbar */
+}
+
+/* Stile per il "thumb" (la parte che si muove) della scrollbar */
+.scroll-bar .thumb {
+    -fx-background-color: #0e5bf5; /* Colore del thumb */
+    -fx-background-radius: 6px; /* Arrotondamento del thumb */
+}
+
+/* Opzionale: stile quando il mouse passa sopra il thumb */
+.scroll-bar .thumb:hover {
+    -fx-background-color: #0056b3; /* Colore del thumb quando il mouse è sopra */
+}
+
+/* SCRITTE BIANCHE PER LE FINESTRE ABOUT E PREFERENCES */
+#aboutPane Label,
+#preferencesPane Label,
+#preferencesPane .radio-button {
+    -fx-text-fill: white; /* Imposta il colore del testo a bianco */
+}

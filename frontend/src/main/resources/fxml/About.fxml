@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="aboutPane"
+            prefHeight="300.0" prefWidth="400.0">
+
+    <VBox spacing="20.0" alignment="CENTER" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <!-- GridPane per i dati -->
+        <GridPane hgap="10" vgap="15" alignment="CENTER">
+            <!-- Definizione delle larghezze delle colonne -->
+            <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" minWidth="100.0" />
+                <ColumnConstraints halignment="LEFT" minWidth="200.0" />
+            </columnConstraints>
+
+            <Label fx:id="nameText" text="Name: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label fx:id="name" GridPane.rowIndex="0" GridPane.columnIndex="1" wrapText="true" maxWidth="180.0"/>
+
+            <Label fx:id="versionText" text="Version: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Label fx:id="version" GridPane.rowIndex="1" GridPane.columnIndex="1" wrapText="true" maxWidth="180.0"/>
+
+            <Label fx:id="buildText" text="Build date: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <Label fx:id="buildDate" GridPane.rowIndex="2" GridPane.columnIndex="1" wrapText="true" maxWidth="180.0"/>
+
+            <Label fx:id="developersText" text="Developed by: " GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <Label fx:id="developers" GridPane.rowIndex="3" GridPane.columnIndex="1" wrapText="true" maxWidth="180.0"/>
+
+            <Label fx:id="descriptionText" text="Description: " GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <Label fx:id="description" GridPane.rowIndex="4" GridPane.columnIndex="1" wrapText="true" maxWidth="180.0"/>
+        </GridPane>
+
+        <!-- Bottone dinamico sotto al GridPane -->
+        <Button fx:id="close" text="Close" prefWidth="60"/>
+    </VBox>
+</AnchorPane>

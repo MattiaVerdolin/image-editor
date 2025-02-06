@@ -7,6 +7,10 @@ The application follows an **MVC architecture for the frontend** and a **multila
 One of the **core strengths** of this editor is its **modern and visually appealing UI**, crafted with **custom CSS styling** to enhance user experience and usability.  
 The interface is structured into **four main sections**, providing an intuitive and efficient workflow for image editing.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/68315ca1-75e8-405e-bdf8-ae6a80e675f7" height="400px">
+</p>
+
 ---
 ## 🎨 Features
 
